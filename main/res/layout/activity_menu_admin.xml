@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuAdmin">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIENVENIDO"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/datosAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bAddGua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addGuar"
+        android:text="Agregar Guardia" />
+
+    <Button
+        android:id="@+id/bLoadDB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadDB"
+        android:text="Cargar BD" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/guardTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

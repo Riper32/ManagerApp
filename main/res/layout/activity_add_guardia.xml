@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    tools:context=".AddGuardia">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/idGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Id del Guardia"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nomGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/apeGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellido"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/nacGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fecha de Nacimiento"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/dirGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Direccion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/passGuard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/idAdmGua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Id del Administrador Responsable"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addGuartoBD"
+            android:text="Agregar" />
+
+        <Button
+            android:id="@+id/bCanGua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cancelGua"
+            android:text="CANCELAR" />
+    </LinearLayout>
+</LinearLayout>
